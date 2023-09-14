@@ -1,13 +1,13 @@
 import productModel from "../models/productModel.js";
 
 import orderModel from "../models/orderModel.js";
-
+import CategoryModel from "../models/CategoryModel.js";
 import { count } from "console";
 import fs from "fs";
 import slugify from "slugify";
 import braintree from "braintree";
 import dotenv from "dotenv";
-import CategoryModel from "../models/CategoryModel.js";
+
 
 dotenv.config();
 
