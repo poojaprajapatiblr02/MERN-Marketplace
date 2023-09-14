@@ -13,8 +13,6 @@ import { fileURLToPath } from 'url';
 //configure env
 dotenv.config();
 
-//create rest object for creating apis
-const app = express(); //calling the express created above
 
 //database config
 connectDB();
@@ -22,6 +20,9 @@ connectDB();
 //esmodule fix
 const __filename= fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
+//create rest object for creating apis
+const app = express(); //calling the express created above
 
 //middlewares
 app.use(cors());
